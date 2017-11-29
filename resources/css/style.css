@@ -2,7 +2,7 @@
 /* CSS Document */
 body {
   margin: 0;
-  width: 1400px;
+  width: 1240px;
   height: 100%;
   font-family: "Helvetica";
   color: seashell;
@@ -23,10 +23,8 @@ body {
   overflow: scroll;
 }
 header {
-  position: fixed;
+  display: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: black;
   align-items: center;
@@ -46,9 +44,10 @@ nav span {
 #mission {
   height: 700px;
   background-image: url(../images/img-mission-background.jpg);
+  background-repeat: no-repeat;
   padding-top: 69px;
 }
-#mission .content {
+.content {
   margin: auto;
   background-color: black;
   width: 100%;
@@ -79,4 +78,23 @@ h2, h3, h4 {
   padding: 5px;
   font-weight: bold;
   text-align: center;
+}
+#location {
+  height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-repeat: no-repeat;
+}
+.place_item {
+  display: inline-block;
+  width: 300px;
+  height: 300px; 
+  margin: 15px 20px 0px 20px;
+  padding-top: 30px;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+#copyright {
+  text-align: left;
+  margin-left: 20px;
 }
